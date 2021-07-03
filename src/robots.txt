@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://resourcefulmind.co.nz/sitemap.xml

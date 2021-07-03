@@ -1,0 +1,433 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    color:  rgb(27, 6, 61);
+    background: rgba(252, 250, 250, 0.945);
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+a   {
+        text-decoration: none;
+    }
+
+
+/*------------Main div positions----*/
+
+#header {
+    position: absolute;
+    top:0px;
+	left:0px;
+	margin: 0;
+	width:100%;
+	max-height: 150px;
+}
+
+#graphic-bar {
+    position: relative;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    padding-top: 3px;
+    background-color: orange
+}
+#graphic-bar img {
+    width:100%;
+    height:auto;
+}
+
+#content {
+    position: relative;
+    width:100%;
+}
+
+#main-text /*--70% width --*/{
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin:0px 0 -10px 0;
+}
+
+#wider-text /* --85% --*/ {
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin:0 0 -10px 0;
+}
+
+#tiled-background {
+    position: relative;
+    width: 100%;
+    background-color:orange /*make this translucent or washed out*/;
+    background-image: url("Images/2-square-tile-pale.png");
+    background-repeat: repeat;
+}
+
+#card-set {
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding: 20px 0 10px 0;
+    width: 70vw;
+    background: transparent;
+    text-align: center;
+    max-width: 1200px;
+}
+
+#card-individual {
+    position: relative;
+    transition: all 0.3s ease;
+    background: rgb(255, 255, 255);
+    width: 90%;
+    border-radius: 5px;
+   /* overflow: hidden;*/
+    padding-bottom: 20px;
+    margin: 20px auto 20px auto;   
+}
+
+#footer-coloured {
+    position: relative;
+    background-color: #fffed0 /*#fffd80 #ffcc80 #ff7f2a #ffdd55 #ffbb66;*/;
+    padding: -10px 0 -20px 0;
+}
+
+#footer-white{
+    position: relative;
+    background-color: transparent;
+    padding: -10px 0 -20px 0;
+}
+
+/* ---- HEADER grid and styles ---*/
+
+
+    /*----grid-container1 - Header----*/
+.item1 { grid-area: logo;}
+.item2 { grid-area: contact;}
+.item3 { grid-area: ph;}
+
+.item5 { grid-area: home;}
+.item6 { grid-area: abouthypnotherapy;}
+.item7 { grid-area: aboutme;}
+.item8 { grid-area: consultation;}
+
+.grid-container1 {
+    display: grid;
+    grid-template-areas:
+        'logo contact contact ph ph'
+        'logo home abouthypnotherapy aboutme consultation';
+    grid-gap: 5px;
+    grid-template-columns: auto 15% 15% 15% 15%;
+    width: 100%;
+    margin-bottom: 5px;
+ }
+
+.item1 {
+    padding: 15px 20px 10px 15px;
+}
+
+.item1 img{
+    max-height: 120px;
+    max-width: 240px;
+}
+  
+.item2 {
+    padding-top: 10px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.item3 {
+    padding: 10px 0 0 5px;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+.item3 > a {    
+    color: #990000;/*-- #993300 -- is slightly brighter*/
+}
+
+.item3 :hover {
+    color: #ffbb00;
+}
+
+
+.nav {
+    font-size: 16px;
+    text-align: center;
+    height: 50px;
+    margin: 5px 0 5px 0;
+    padding: 0;
+    color: #331100;
+    background-color:#ffdd00;
+}
+
+.nav:not(.current):hover{
+    background-color: #ffbb00;
+}
+/*end of HEADER grid container1 */
+
+
+/*---- GENERAL CONTENT STYLES ----*/
+        /*---HEADINGS ----*/
+h1	{
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 0.9em;
+    text-align: center;
+    padding-top: 0.5em;
+    color: rgb(68, 78, 209);
+}
+        
+h2  {
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 0.9em;
+    margin: 1em;
+    padding-top:0.5em;
+    text-align: center;
+    color: rgb(10, 12, 31);  
+}
+                    
+h3  { /* h3=card heading */
+    font-size: 25px;
+    font-weight:100;
+    line-height: 1em;
+    text-align: center;
+    padding: 30px 15px 0 15px;
+    color: rgb(71, 13, 3);
+}
+        
+h4  { /*h4=consultation grid heading*/
+    font-size: 20px;
+    font-weight:100;
+    margin-top: 0;
+    color: rgb(37, 75, 12);
+}
+
+h5  { font-size: 20px;
+    font-weight: 100;
+    line-height: 0.3em;
+    text-align: center;
+    padding-top: 0;
+    color: rgb(68, 78, 209);
+}
+        
+     /*----PARAGRAPHS ----*/
+p   {
+    padding: 0 20px 16px 20px;
+}
+
+span {/*-- italic--*/
+    font-style: italic;
+}
+        
+.card-text   {
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+.card-img1 {
+    margin: 20px 20px 5px 20px;
+    float: left;
+    height: 200px; 
+}
+
+.card-img2 {
+    margin: 20px 20px 5px 20px;
+    float: left;
+    height:120px; 
+}
+
+.card-quote {
+    font-size: 14px;
+    line-height: 1.2em;
+    margin: 0 60px 0 60px;   
+}
+        
+.quote  {
+    font-size: 10pt;
+    text-align: center;
+}
+       
+.credits   {/*---- in Footer ----*/
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 0 20px 0;
+    color: #663300;
+}
+
+.footer-no-color { /*---for home page ---*/
+    background-color: transparent;
+}
+        
+     /*----LIST - bullets ----*/
+ul {
+    list-style-type: circle;
+    padding: 0 0 0 64px;
+}
+        
+
+
+/*---- Grid container 2 for Consultation page ----*/
+
+.item12 { grid-area: where}
+.item13 { grid-area: wellington}
+.item14 { grid-area: when}
+.item15 { grid-area: day}
+.item16 { grid-area: step1}
+.item17 { grid-area: detail1}
+.item18 { grid-area: step2}
+.item19 { grid-area: detail2}
+.item20 { grid-area: step3}
+.item21 { grid-area: detail3}
+.item22 { grid-area: step4}
+.item23 { grid-area: detail4}
+
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+        'where wellington'
+        'when day'
+        'step1 detail1'
+        'step2 detail2'
+        'step3 detail3'
+        'step4 detail4';
+    grid-gap: 10px;
+    grid-template-columns: 30% 70%;
+    padding: 0 20px 40px 20px;
+    width: calc(100% - 40px);
+    text-align: left;
+}
+
+.item12, .item14, .item16, .item18, .item20, .item22 {
+    padding: 10px 0 0 0;
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(8, 16, 80);  
+}
+
+.item13, .item15, .item17, .item19, .item21, .item23 {
+    padding:10px 0 10px 10px; 
+}
+
+
+/* ---- FOR MOBILE - media queries ----*/
+@media only screen and (max-width: 600px) {
+    
+.grid-container1 {/*-media queries-*/
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        'logo logo'
+        'contact ph'
+        'home abouthypnotherapy'
+        'aboutme consultation';
+    padding: 10px 20px 5px 10px;
+}
+       
+.item2 {/*-media queries-*/
+      text-align: center;
+      }
+  
+.item3{/*-media queries-*/
+      text-align: left;
+      font-size: 14px;
+      }
+  
+     
+.grid-container2 {/*-media queries-*/
+    grid-template-columns: 100%;
+    grid-template-areas:
+        'where'
+        'wellington'
+        'when'
+        'day'
+        'step1'
+        'detail1'
+        'step2'
+        'detail2'
+        'step3'
+        'detail3'
+        'step4'
+        'detail4';
+     grid-gap: 0;
+     padding: 0 10px 0 10px;
+     width: 100%;
+     text-align: left;
+}
+    
+.item12, .item14, .item16, .item18, .item20, .item22 { /*-media queries-*/
+    font-size: 20px;
+    padding-top:20px;
+}
+
+.item13, .item15, .item17, .item19, .item21, .item23 {/*-media queries-*/
+    padding: 0 0 10px 10px; 
+}
+     
+/* --Text width for Media queries --*/
+
+#main-text {/*-media queries-*/
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+    
+#wider-text /* --85% --*/ {/*-media queries-*/
+    width: 100%;
+}
+
+#card-set {/*-media queries-*/
+    width: 90vw;
+}
+
+/*---Styles for media queries ---*/
+h1	{/*-media queries-*/
+    font-size: 1.6em;
+    padding-top: 0;
+}
+
+h2  {/*-media queries-*/
+    font-size: 1.3em;
+    padding-top: 0;
+}
+
+h3  { /* h3=card heading -media queries-- */
+    Padding-top: 0;
+}
+
+p   {
+    padding: 0 10px 16px 10px;
+}
+
+ul {
+    padding: 0 10px 0 20px;
+}
+
+.card-img1 {
+    margin: 20px auto 0 auto;
+    float: none;
+    height:100px; 
+}
+    
+.card-img2 {
+    margin: 20px auto 0 auto;
+    float: none;
+    height:70px; 
+}
+
+/*
+    CENTRE STUFF:
+    margin-left:auto;
+    margin-right:auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    */
