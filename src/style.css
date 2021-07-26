@@ -129,14 +129,12 @@ a   {
 
 .item1 {
     border: 0;
-    padding:0;/*  15px 20px 10px 15px;--*/
-    background-color: pink;
-      
+    padding:15px 20px 10px 20px;  
 }
 
 .item1 img{
-    max-height: 500px;
-    max-width: auto;
+    max-height: auto;
+    max-width: 60%;
 }
   
 .item2 {
