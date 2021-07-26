@@ -163,14 +163,18 @@ a   {
     font-size: 16px;
     text-align: center;
     height: 50px;
-    margin: 5px 0 5px 0;
+    margin: 5px 10px 5px 10px;
     padding: 0;
     color: #331100;
-    background-color:#ffdd00;
+    border-bottom: 2px solid orange;
+}
+
+.nav.current {
+    border-bottom: 2px solid rgb(0, 47, 255);
 }
 
 .nav:not(.current):hover{
-    background-color: #ffbb00;
+    border-bottom: 2px solid rgb(0, 47, 255);
 }
 /*end of HEADER grid container1 */
 
