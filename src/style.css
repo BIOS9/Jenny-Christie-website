@@ -170,11 +170,11 @@ a   {
 }
 
 .nav.current {
-    border-bottom: 2px solid rgb(0, 47, 255);
+    border-bottom: 2px solid #5f8dd3;
 }
 
 .nav:not(.current):hover{
-    border-bottom: 2px solid rgb(0, 47, 255);
+    border-bottom: 2px solid #5f8dd3ff;
 }
 /*end of HEADER grid container1 */
 
