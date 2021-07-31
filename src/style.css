@@ -187,7 +187,7 @@ h1	{
     line-height: 0.9em;
     text-align: center;
     padding-top: 0.5em;
-    color: rgb(68, 78, 209);
+    color: #5f8dd3;
 }
         
 h2  {
@@ -221,8 +221,7 @@ h5  { font-size: 20px;
     line-height: 0.3em;
     text-align: center;
     padding-top: 0;
-    color: rgb(68, 78, 209);
-}
+    color: #5f8dd3;
         
      /*----PARAGRAPHS ----*/
 p   {
