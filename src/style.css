@@ -27,7 +27,7 @@ a   {
 #graphic-bar {
     position: relative;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     padding-top: 3px;
     background-color: orange
