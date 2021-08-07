@@ -312,7 +312,6 @@ ul {
     grid-gap: 10px;
     grid-template-columns: 30% 70%;
     padding: 0 20px 40px 20px;
-    width: calc(100% - 40px);
     text-align: left;
 }
 
@@ -368,7 +367,6 @@ ul {
         'detail4';
      grid-gap: 0;
      padding: 0 10px 0 10px;
-     width: 100%;
      text-align: left;
 }
     
@@ -378,15 +376,21 @@ ul {
 }
 
 .item13, .item15, .item17, .item19, .item21, .item23 {/*-media queries-*/
-    padding: 0 0 10px 10px; 
+    padding: 0 0 10px 0; 
 }
      
 /* --Text width for Media queries --*/
 
+#main-text-outer {
+    padding: 0 10px 0 10px;
+}
+
 #main-text {/*-media queries-*/
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
+}
+
+#main-text > p {
+    padding: 0;
 }
     
 #wider-text /* --85% --*/ {/*-media queries-*/
