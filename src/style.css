@@ -27,7 +27,7 @@ a   {
 #graphic-bar {
     position: relative;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     padding-top: 3px;
     background-color: orange
@@ -116,6 +116,10 @@ a   {
 .item7 { grid-area: aboutme;}
 .item8 { grid-area: consultation;}
 
+.grid-outer {
+    width: 100%;
+}
+
 .grid-container1 {
     display: grid;
     grid-template-areas:
@@ -123,7 +127,6 @@ a   {
         'logo home abouthypnotherapy aboutme consultation';
     grid-gap: 5px;
     grid-template-columns: auto 15% 15% 15% 15%;
-    width: 100%;
     margin-bottom: 5px;
  }
 
@@ -309,7 +312,6 @@ ul {
     grid-gap: 10px;
     grid-template-columns: 30% 70%;
     padding: 0 20px 40px 20px;
-    width: calc(100% - 40px);
     text-align: left;
 }
 
@@ -335,7 +337,7 @@ ul {
         'contact ph'
         'home abouthypnotherapy'
         'aboutme consultation';
-    padding: 10px 20px 5px 10px;
+    padding: 10px 15px 5px 10px;
 }
        
 .item2 {/*-media queries-*/
@@ -365,7 +367,6 @@ ul {
         'detail4';
      grid-gap: 0;
      padding: 0 10px 0 10px;
-     width: 100%;
      text-align: left;
 }
     
@@ -375,15 +376,21 @@ ul {
 }
 
 .item13, .item15, .item17, .item19, .item21, .item23 {/*-media queries-*/
-    padding: 0 0 10px 10px; 
+    padding: 0 0 10px 0; 
 }
      
 /* --Text width for Media queries --*/
 
+#main-text-outer {
+    padding: 0 10px 0 10px;
+}
+
 #main-text {/*-media queries-*/
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
+}
+
+#main-text > p {
+    padding: 0;
 }
     
 #wider-text /* --85% --*/ {/*-media queries-*/
