@@ -234,7 +234,8 @@ p   {
 
 span {/*-- italic--*/
     font-style: italic;
-}
+}            
+            
         
 .card-text   {
     line-height: 1.2em;
@@ -259,7 +260,16 @@ span {/*-- italic--*/
     line-height: 1.2em;
     margin: 0 60px 0 60px;   
 }
-        
+
+.contact-logo {
+    padding: 0 15px 0 0;
+}
+
+.indent {
+    padding: 0 20px 20px 60px;
+    color:blue;
+} 
+
 .quote  {
     font-size: 10pt;
     text-align: center;
@@ -330,110 +340,111 @@ ul {
 /* ---- FOR MOBILE - media queries ----*/
 @media only screen and (max-width: 600px) {
     
-.grid-container1 {/*-media queries-*/
-    grid-template-columns: 50% 50%;
-    grid-template-areas:
-        'logo logo'
-        'contact ph'
-        'home abouthypnotherapy'
-        'aboutme consultation';
-    padding: 10px 15px 5px 10px;
-}
-       
-.item2 {/*-media queries-*/
-      text-align: center;
-      }
-  
-.item3{/*-media queries-*/
-      text-align: left;
-      font-size: 14px;
-      }
-  
-     
-.grid-container2 {/*-media queries-*/
-    grid-template-columns: 100%;
-    grid-template-areas:
-        'where'
-        'wellington'
-        'when'
-        'day'
-        'step1'
-        'detail1'
-        'step2'
-        'detail2'
-        'step3'
-        'detail3'
-        'step4'
-        'detail4';
-     grid-gap: 0;
-     padding: 0 10px 0 10px;
-     text-align: left;
-}
+    .grid-container1 {/*-media queries-*/
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            'logo logo'
+            'contact ph'
+            'home abouthypnotherapy'
+            'aboutme consultation';
+        padding: 10px 15px 5px 10px;
+    }
+        
+    .item2 {/*-media queries-*/
+        text-align: center;
+        }
     
-.item12, .item14, .item16, .item18, .item20, .item22 { /*-media queries-*/
-    font-size: 20px;
-    padding-top:20px;
-}
-
-.item13, .item15, .item17, .item19, .item21, .item23 {/*-media queries-*/
-    padding: 0 0 10px 0; 
-}
-     
-/* --Text width for Media queries --*/
-
-#main-text-outer {
-    padding: 0 10px 0 10px;
-}
-
-#main-text {/*-media queries-*/
-    width: 100%;
-}
-
-#main-text > p {
-    padding: 0;
-}
+    .item3{/*-media queries-*/
+        text-align: left;
+        font-size: 14px;
+        }
     
-#wider-text /* --85% --*/ {/*-media queries-*/
-    width: 100%;
-}
+        
+    .grid-container2 {/*-media queries-*/
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'where'
+            'wellington'
+            'when'
+            'day'
+            'step1'
+            'detail1'
+            'step2'
+            'detail2'
+            'step3'
+            'detail3'
+            'step4'
+            'detail4';
+        grid-gap: 0;
+        padding: 0 10px 0 10px;
+        text-align: left;
+    }
+        
+    .item12, .item14, .item16, .item18, .item20, .item22 { /*-media queries-*/
+        font-size: 20px;
+        padding-top:20px;
+    }
 
-#card-set {/*-media queries-*/
-    width: 90vw;
-}
+    .item13, .item15, .item17, .item19, .item21, .item23 {/*-media queries-*/
+        padding: 0 0 10px 0; 
+    }
+        
+    /* --Text width for Media queries --*/
 
-/*---Styles for media queries ---*/
-h1	{/*-media queries-*/
-    font-size: 1.6em;
-    padding-top: 0;
-}
+    #main-text-outer {
+        padding: 0 10px 0 10px;
+    }
 
-h2  {/*-media queries-*/
-    font-size: 1.3em;
-    padding-top: 0;
-}
+    #main-text {/*-media queries-*/
+        width: 100%;
+    }
 
-h3  { /* h3=card heading -media queries-- */
-    Padding-top: 0;
-}
+    #main-text > p {
+        padding: 0;
+    }
+        
+    #wider-text /* --85% --*/ {/*-media queries-*/
+        width: 100%;
+    }
 
-p   {
-    padding: 0 10px 16px 10px;
-}
+    #card-set {/*-media queries-*/
+        width: 90vw;
+    }
 
-ul {
-    padding: 0 10px 0 20px;
-}
+    /*---Styles for media queries ---*/
+    h1	{/*-media queries-*/
+        font-size: 1.6em;
+        padding-top: 0;
+    }
 
-.card-img1 {
-    margin: 20px auto 0 auto;
-    float: none;
-    height:100px; 
-}
-    
-.card-img2 {
-    margin: 20px auto 0 auto;
-    float: none;
-    height:70px; 
+    h2  {/*-media queries-*/
+        font-size: 1.3em;
+        padding-top: 0;
+    }
+
+    h3  { /* h3=card heading -media queries-- */
+        Padding-top: 0;
+    }
+
+    p   {
+        padding: 0 10px 16px 10px;
+    }
+
+    ul {
+        padding: 0 10px 0 20px;
+    }
+
+    .card-img1 {
+        margin: 20px auto 0 auto;
+        float: none;
+        height:100px; 
+    }
+        
+    .card-img2 {
+        margin: 20px auto 0 auto;
+        float: none;
+        height:70px; 
+    }
 }
 
 /*
