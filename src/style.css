@@ -108,13 +108,12 @@ a   {
 
     /*----grid-container1 - Header----*/
 .item1 { grid-area: logo;}
-.item2 { grid-area: contact;}
-.item3 { grid-area: ph;}
+.item2 { grid-area: home;}
+.item3 { grid-area: about;}
+.item4 { grid-area: consultation;}
+.item5 { grid-area: blog;}
+.item6 { grid-area: contact;}
 
-.item5 { grid-area: home;}
-.item6 { grid-area: abouthypnotherapy;}
-.item7 { grid-area: aboutme;}
-.item8 { grid-area: consultation;}
 
 .grid-outer {
     width: 100%;
@@ -123,8 +122,8 @@ a   {
 .grid-container1 {
     display: grid;
     grid-template-areas:
-        'logo contact contact ph ph'
-        'logo home abouthypnotherapy aboutme consultation';
+        'logo home about consultation blog contact';
+
     grid-gap: 5px;
     grid-template-columns: auto 15% 15% 15% 15%;
     margin-bottom: 5px;
@@ -144,10 +143,11 @@ a   {
     padding-top: 10px;
     font-weight: 600;
     text-align: right;
+
 }
 
 .item3 {
-    padding: 10px 0 0 5px;
+    padding: 10px;
     font-weight: 600;
     text-align: left;
 }
@@ -231,10 +231,7 @@ h5  { font-size: 20px;
 p   {
     padding: 0 20px 16px 20px;
 }
-
-span {/*-- italic--*/
-    font-style: italic;
-}            
+    
             
         
 .card-text   {
@@ -282,6 +279,8 @@ span {/*-- italic--*/
     color: #cc6600; /*---#663300;---*/
 }
 
+.italic {font-style: italic;
+}
 /*---not used? - was  to be for home page perhaps
 .footer-no-color {
     background-color: transparent;
