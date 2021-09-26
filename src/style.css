@@ -91,11 +91,6 @@ a   {
     margin: 20px auto 20px auto;   
 }
 
-/*---#footer-coloured {
-    position: relative;
-    background-color: #ffffff alternatives: #fffd80 #ffcc80 #ff7f2a #ffdd55 #ffbb66;
-    padding: -10px 0 -20px 0;
-}---*/
 
 #footer-white{
     position: relative;
@@ -125,7 +120,7 @@ a   {
         'logo home about consultation blog contact';
 
     grid-gap: 5px;
-    grid-template-columns: auto 15% 15% 15% 15%;
+    grid-template-columns: auto 14% 14% 14% 14% 14% ;
     margin-bottom: 5px;
  }
 
@@ -136,49 +131,52 @@ a   {
 
 .item1 img{
     max-height: auto;
-    max-width: 60%;
+    max-width: 70%;
 }
   
-.item2 {
-    padding-top: 10px;
+.item2 .item3 .item4 .item5 .item6 {
     font-weight: 600;
-    text-align: right;
-
-}
-
-.item3 {
-    padding: 10px;
-    font-weight: 600;
-    text-align: left;
-}
-
-
-.item3 > a {    
-    color: #990000;/*-- #993300 -- is slightly brighter*/
-}
-
-.item3 :hover {
-    color: #ffbb00;
-}
-
-
-.nav {
-    font-size: 16px;
+   
     text-align: center;
-    height: 50px;
-    margin: 5px 10px 5px 10px;
-    padding: 0;
-    color: #331100;
-    border-bottom: 2px solid orange;
+    font-size: 30px;
+    border: none;
+    outline: none;
 }
+    
+    .nav {
+        font-size: 14px;
+        text-align: center;
+        margin: 5px 10px 0 10px;
+        padding: 0;
+        border-bottom: 2px solid white;
+    }
+    
+    .nav.current {
+        color: #287DA1 /*#6EB3B5 #67A6A8 #86d5db*/;
+        border-bottom: 2px solid white;
+    }
+    
+    .nav:not(.current):hover{
+        border-bottom: 3px solid #86d5db;
+    }
 
-.nav.current {
-    border-bottom: 2px solid #5f8dd3;
-}
+    
+/* The subnavigation menu */
+.subnav {
+    float: left;
+    overflow: hidden;
+    font-size: 14px;
+  }
 
-.nav:not(.current):hover{
-    border-bottom: 2px solid #5f8dd3ff;
-}
+  .nav-content {
+      display: none;
+  }
+
+  .subnav:hover > .nav-content {
+    display: block;
+  }
+  
+ 
 /*end of HEADER grid container1 */
 
 
@@ -190,7 +188,7 @@ h1	{
     line-height: 0.9em;
     text-align: center;
     padding-top: 0.5em;
-    color: #5f8dd3;
+    color: #287DA1 /*#267596 #247191 #1d5b75*/;
 }
         
 h2  {
@@ -224,7 +222,7 @@ h5  { font-size: 20px;
     line-height: 0.3em;
     text-align: center;
     padding-top: 0;
-    color: #5f8dd3;
+    color: #287DA1 /*#267596 #5f8dd3*/;
 }
         
      /*----PARAGRAPHS ----*/
@@ -281,11 +279,56 @@ p   {
 
 .italic {font-style: italic;
 }
-/*---not used? - was  to be for home page perhaps
-.footer-no-color {
-    background-color: transparent;
-}---*/
+
         
+/*---FROM W3 for Nav Bar/
+/* The navigation menu */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  */
+
      /*----LIST - bullets ----*/
 ul {
     list-style-type: circle;
