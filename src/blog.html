@@ -51,49 +51,81 @@
 
 <body>
     <div class="grid-outer">
-        <div class="grid-container1">
-            <div class="item1"><img src="Images/JC-logo.svg" alt="logo"/></div>
-            <div class="item2 nav"><a href="index.html">HOME</a></div>
-            <div class="item3 nav">
-                <div class="subnav">ABOUT
-                   
-                    <div class="sub nav-content">
-                      <a href="about-hypnotherapy.html">About hypnotherapy</a>
-                      <a href="about-me.html">About me</a>
-                                      
+        <div class="grid-container">
+            <div class="item1">
+                <div class="logo-img">
+                    <img src="Images/JC-logo.svg" alt="logo"/>
+                </div>
+            </div>
+            <div class="item2"> 
+            
+                <!-- MATTS NAV STRUCTURE                    
+                    nav-items
+                        nav-item
+                            main-link
+                                link-title
+                            sub-links
+                                sub-link
+                                    sub-link-title
+                -->
+        
+        
+                <div class="nav-items">
+                    <!-- Single home item -->
+                    <div class="nav-item">
+                        <a href="index.html" class="main-link">
+                            <div class="link-title">HOME</div>
+                        </a>
                     </div>
-                  </div>
-            </div> 
-            <div class="item4 nav">
-                <div class="subnav">CONSULTATION
-                    <div class="sub nav-content">
-                      <a href="therapy-sessions.html">Therapy sessions</a>
-                      <br>
-                      <a href="toc.html">Terms and conditions</a>
-                
+
+                    <!-- About item with two sub-items -->
+                    <div class="nav-item">
+                        <a href="#" class="main-link">
+                            <div class="link-title">ABOUT ▼</div>
+                        </a>
+                        <div class="sub-links">
+                            <a href="about-hypnotherapy.html" class="sub-link">
+                                <div class="sub-link-title">About hypnotherapy</div>
+                            </a>
+                            <a href="about-me.html" class="sub-link">
+                                <div class="sub-link-title">About me</div>
+                            </a>
+                        </div> 
+                    </div>
+
+                    <!-- Consultation item with two sub-items -->
+                    <div class="nav-item">
+                        <a href="#" class="main-link">
+                            <div class="link-title">CONSULTATION ▼</div>
+                        </a>
+                        <div class="sub-links">
+                            <a href="therapy-sessions.html" class="sub-link">
+                                <div class="sub-link-title">Therapy sessions</div>
+                            </a>
+                            <a href="toc.html" class="sub-link">
+                                <div class="sub-link-title">Terms and conditions</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Single blog item -->
+                    <div class="nav-item">
+                        <a href="#" class="main-link">
+                            <div class="link-title">BLOG</div>
+                        </a>
+                    </div>
+
+                    <!-- Single Contact item -->
+                    <div class="nav-item">
+                        <a href="contact-me.html" class="main-link">
+                            <div class="link-title">CONTACT</div>
+                        </a>
                     </div>
                 </div>
-                      
             </div>
-        
-            <div class="item5 nav current">BLOG
-            </div>
-            <div class="item6 nav"><a href="contact-me.html">CONTACT</a>
-            </div>
-            
         </div>
     </div>
-<!-- from w3
-    <div class="subnav">
-        <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
-        <div class="sub nav-content">
-          <a href="#link1">Link 1</a>
-          <a href="#link2">Link 2</a>
-          <a href="#link3">Link 3</a>
-          <a href="#link4">Link 4</a>
-        </div>
-      </div>
-    -->
+
     
     <div id="graphic-bar">
         <img src="Images/graphic-strip.svg" alt="graphics"/>

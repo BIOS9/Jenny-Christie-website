@@ -98,87 +98,107 @@ a   {
     padding: -10px 0 -20px 0;
 }
 
-/* ---- HEADER grid and styles ---*/
+/* ---- HEADER  ---*/
+/*--- Grid container for header ----*/
+
+.item1 { grid-area: logo}
+.item2 { grid-area: nav}
 
 
-    /*----grid-container1 - Header----*/
-.item1 { grid-area: logo;}
-.item2 { grid-area: home;}
-.item3 { grid-area: about;}
-.item4 { grid-area: consultation;}
-.item5 { grid-area: blog;}
-.item6 { grid-area: contact;}
-
-
-.grid-outer {
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'logo nav';
+    grid-template-columns: 25% 75%;
+    padding-bottom: 2px;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
-.grid-container1 {
-    display: grid;
-    grid-template-areas:
-        'logo home about consultation blog contact';
-
-    grid-gap: 5px;
-    grid-template-columns: auto 14% 14% 14% 14% 14% ;
-    margin-bottom: 5px;
- }
-
 .item1 {
-    border: 0;
-    padding:15px 20px 10px 20px;  
+    padding: 20px;
+}
+.logo-img > img{
+    width: 80%;
 }
 
-.item1 img{
-    max-height: auto;
-    max-width: 70%;
+.item2  {
+ padding-top: 2vh;
 }
-  
-.item2 .item3 .item4 .item5 .item6 {
-    font-weight: 600;
+/*  *******MATTS NAV STRUCTURE****** */
+
+
    
-    text-align: center;
-    font-size: 30px;
-    border: none;
-    outline: none;
+
+
+.nav-items {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+    justify-content: space-around;
 }
-    
-    .nav {
-        font-size: 14px;
-        text-align: center;
-        margin: 5px 10px 0 10px;
-        padding: 0;
-        border-bottom: 2px solid white;
-    }
-    
-    .nav.current {
-        color: #287DA1 /*#6EB3B5 #67A6A8 #86d5db*/;
-        border-bottom: 2px solid white;
-    }
-    
-    .nav:not(.current):hover{
-        border-bottom: 3px solid #86d5db;
-    }
 
-    
-/* The subnavigation menu */
-.subnav {
-    float: left;
-    overflow: hidden;
-    font-size: 14px;
-  }
+.nav-item {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    overflow: visible;
+}
 
-  .nav-content {
-      display: none;
-  }
+.main-text {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-  .subnav:hover > .nav-content {
+.main-text.link:hover, .main-text.current {
+    border-bottom: 3px solid #86d5db;
+}
+
+
+.main-link:hover {
+    border-bottom: 3px solid #86d5db;
+}
+
+.link-title {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+.sub-links {
+    top: 5vh;
+    position: absolute;
+    display: none;
+    cursor: default;
+}
+
+.nav-item:hover > .sub-links {
     display: block;
-  }
-  
- 
-/*end of HEADER grid container1 */
+}
 
+.sub-link-title {
+    padding: 10px;
+}
+
+.sub-link {
+    text-decoration: none;
+}
+
+.sub-link:hover {
+    text-decoration: underline;
+}
+/* ********END MATTS NAV STRUCTURE***** */
+   
+
+
+  
 
 /*---- GENERAL CONTENT STYLES ----*/
         /*---HEADINGS ----*/
