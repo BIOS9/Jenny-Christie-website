@@ -1,0 +1,32 @@
+@media only screen and (max-width: 700px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'logo nav';
+        grid-template-columns: 100%;
+        grid-template-rows: 25vh auto;
+        padding-bottom: 2px;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .logo-img {
+        text-align: center;
+        height: 100%;
+    }
+
+    .logo-img > img{
+        height: 100%;
+    }    
+
+    .item1 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    
+    .item2  {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+}
