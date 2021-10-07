@@ -21,5 +21,35 @@
     .item2  {
         grid-column-start: 1;
         grid-row-start: 2;
+        text-align: start;
+    }
+
+    .nav-items {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .sub-links {
+        position: relative;
+        top: 0;
+        margin-left: 30px;
+        display: block;
+        cursor: default;
+    }
+
+    .link-title {
+        text-align: start;
+    }
+
+    .sub-link-title {
+        padding: 0px;
     }
 }
