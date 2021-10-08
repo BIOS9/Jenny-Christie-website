@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mobile_nav.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -51,17 +52,81 @@
 
 <body>
     <div class="grid-outer">
-        <div class="grid-container1">
-            <div class="item1"><img src="Images/JC-logo.svg" alt="logo"/></div>
-            <div class="item2">CONTACT ME:</div>
-            <div class="item3">Ph <a href="tel:+64211584040">+64211584040</a> &nbsp or &nbsp <a href="mailto:jenny@jennychristie.co.nz"> jenny@jennychristie.co.nz</a> </div> 
+        <div class="grid-container">
+            <div class="item1">
+                <div class="logo-img">
+                    <img src="Images/JC-logo.svg" alt="logo"/>
+                </div>
+            </div>
+            <div class="item2"> 
             
-            <a href="index.html"><div class="item5 nav">Home</div></a>
-            <a href="about-hypnotherapy.html"><div class="item6 nav">About<br>hypnotherapy</div></a>
-            <a href="about-me.html"><div class="item7 nav">About<br>me</div></a>
-            <div class="item8 nav current">Consultation</div>
+                <!-- MATTS NAV STRUCTURE                    
+                    nav-items
+                        nav-item
+                            main-link
+                                link-title
+                            sub-links
+                                sub-link
+                                    sub-link-title
+                -->
+        
+        
+                <div class="nav-items">
+                    <!-- Single home item -->
+                    <div class="nav-item">
+                        <a href="index.html" class="main-text link">
+                            <div class="link-title">HOME</div>
+                        </a>
+                    </div>
+
+                    <!-- About item with two sub-items -->
+                    <div class="nav-item">
+                        <a href="#" class="main-text">
+                            <div class="link-title">ABOUT ▼</div>
+                        </a>
+                        <div class="sub-links">
+                            <a href="about-hypnotherapy.html" class="sub-link">
+                                <div class="sub-link-title">About hypnotherapy</div>
+                            </a>
+                            <a href="about-me.html" class="sub-link">
+                                <div class="sub-link-title">About me</div>
+                            </a>
+                        </div> 
+                    </div>
+
+                    <!-- Consultation item with two sub-items -->
+                    <div class="nav-item">
+                        <a href="#" class="main-text current">
+                            <div class="link-title">CONSULTATION ▼</div>
+                        </a>
+                        <div class="sub-links">
+                            <a href="therapy-sessions.html" class="sub-link">
+                                <div class="sub-link-title">Therapy sessions</div>
+                            </a>
+                            <a href="toc.html" class="sub-link">
+                                <div class="sub-link-title">Terms and conditions</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Single blog item -->
+                    <div class="nav-item">
+                        <a href="blog.html" class="main-text link">
+                            <div class="link-title">BLOG</div>
+                        </a>
+                    </div>
+
+                    <!-- Single Contact item -->
+                    <div class="nav-item">
+                        <a href="contact-me.html" class="main-text link">
+                            <div class="link-title">CONTACT</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
         
     <div id="graphic-bar" ><img src="Images/graphic-strip.svg" alt="graphics"/> 
     </div>

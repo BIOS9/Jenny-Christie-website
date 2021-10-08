@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mobile_nav.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -51,16 +52,83 @@
 
 <body>
     <div class="grid-outer">
-        <div class="grid-container1">
-            <div class="item1"><img src="Images/JC-logo.svg" alt="logo"/></div>
-            <div class="item2">CONTACT ME:</div>
-            <div class="item3">Ph <a href="tel:+64211584040">+64211584040</a> &nbsp or &nbsp <a href="mailto:jenny@jennychristie.co.nz"> jenny@jennychristie.co.nz</a> </div>
-            <div class="item5 nav current">Home</div>
-            <a href="about-hypnotherapy.html"><div class="item6 nav">About<br>hypnotherapy</div></a>
-            <a href="about-me.html"><div class="item7 nav">About<br>me</div></a>
-            <a href="services.html"><div class="item8 nav">Consultation</div></a>
+        <div class="grid-container">
+            <div class="item1">
+                <div class="logo-img">
+                    <img src="Images/JC-logo.svg" alt="logo"/>
+                </div>
+            </div>
+            <div class="item2"> 
+            
+                <!-- MATTS NAV STRUCTURE                    
+                    nav-items
+                        nav-item
+                            main-text
+                                link-title
+                            sub-links
+                                sub-link
+                                    sub-link-title
+                -->
+        
+        
+                <div class="nav-items">
+                    <!-- Single home item -->
+                    <div class="nav-item">
+                        <a href="index.html" class="main-text link current">
+                            <div class="link-title">HOME</div>
+                        </a>
+                    </div>
+
+                    <!-- About item with two sub-items -->
+                    <div class="nav-item">
+                        <a href="#" class="main-text">
+                            <div class="link-title">ABOUT ▼</div>
+                        </a>
+                        <div class="sub-links">
+                            <a href="about-hypnotherapy.html" class="sub-link">
+                                <div class="sub-link-title">About hypnotherapy</div>
+                            </a>
+                            <a href="about-me.html" class="sub-link">
+                                <div class="sub-link-title">About me</div>
+                            </a>
+                        </div> 
+                    </div>
+
+                    <!-- Consultation item with two sub-items -->
+                    <div class="nav-item">
+                        <a href="#" class="main-text">
+                            <div class="link-title">CONSULTATION ▼</div>
+                        </a>
+                        <div class="sub-links">
+                            <a href="therapy-sessions.html" class="sub-link">
+                                <div class="sub-link-title">Therapy sessions</div>
+                            </a>
+                            <a href="toc.html" class="sub-link">
+                                <div class="sub-link-title">Terms and conditions</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Single blog item -->
+                    <div class="nav-item">
+                        <a href="blog.html" class="main-text link">
+                            <div class="link-title">BLOG</div>
+                        </a>
+                    </div>
+
+                    <!-- Single Contact item -->
+                    <div class="nav-item">
+                        <a href="contact-me.html" class="main-text link">
+                            <div class="link-title">CONTACT</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+              
+         
     <div id="graphic-bar" >
         <img src="Images/graphic-strip.svg" alt="graphics"/> 
     </div>
@@ -121,7 +189,7 @@
                         Hypnotherapy can help you identify your strengths and values, reduce anxiety about particular situations you find difficult, and change the subconscious thought patterns that stop you engaging with the world in a relaxed and confident way. Instead of those limiting patterns, you can learn to recognise the real you, the confident you, with the potential to be all you can be. 
                     </p>
                     <p class="card-quote">
-                        <span>"The opinion which other people have of you is their problem, not yours"</span>
+                        <span class="italic">"The opinion which other people have of you is their problem, not yours"</span>
                         <br>
                         - Elizabeth Kubler-Ross
                     </p>
@@ -141,7 +209,7 @@
                         Hypnotherapy can help you identify the issues, bring some light into the darkness and develop a positive way forward into a life where joy and optimism flourish
                     </p>
                     <p class="card-quote">
-                        <span>"The most beautiful people we have known are those who have known defeat, known suffering, known struggle, known loss, and have found their way out of those depths"</span> - Elizabeth Kubler-Ross   
+                        <span class="italic"> "The most beautiful people we have known are those who have known defeat, known suffering, known struggle, known loss, and have found their way out of those depths"</span> - Elizabeth Kubler-Ross   
                     </p>
                 </div>
 
@@ -155,7 +223,7 @@
                         Hypnotherapy can help you find your way through the grief, looking at it in different ways, gently dealing with different aspects of it, and gradually letting yourself reopen to live a full life.
                         </p>
                         <p class="card-quote">  
-                            <span>"I thought I could describe a state; make a map of sorrow. Sorrow, however, turns out to be not a state but a process."</span> - C.S. Lewis
+                            <span class="italic">"I thought I could describe a state; make a map of sorrow. Sorrow, however, turns out to be not a state but a process."</span> - C.S. Lewis
                     </p>
                 </div>
             </div>

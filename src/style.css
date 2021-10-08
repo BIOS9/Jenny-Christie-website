@@ -91,11 +91,6 @@ a   {
     margin: 20px auto 20px auto;   
 }
 
-/*---#footer-coloured {
-    position: relative;
-    background-color: #ffffff alternatives: #fffd80 #ffcc80 #ff7f2a #ffdd55 #ffbb66;
-    padding: -10px 0 -20px 0;
-}---*/
 
 #footer-white{
     position: relative;
@@ -103,84 +98,103 @@ a   {
     padding: -10px 0 -20px 0;
 }
 
-/* ---- HEADER grid and styles ---*/
+/* ---- HEADER  ---*/
+/*--- Grid container for header ----*/
+
+.item1 { grid-area: logo}
+.item2 { grid-area: nav}
 
 
-    /*----grid-container1 - Header----*/
-.item1 { grid-area: logo;}
-.item2 { grid-area: contact;}
-.item3 { grid-area: ph;}
-
-.item5 { grid-area: home;}
-.item6 { grid-area: abouthypnotherapy;}
-.item7 { grid-area: aboutme;}
-.item8 { grid-area: consultation;}
-
-.grid-outer {
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'logo nav';
+    grid-template-columns: 25% 75%;
+    padding-bottom: 2px;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
-.grid-container1 {
-    display: grid;
-    grid-template-areas:
-        'logo contact contact ph ph'
-        'logo home abouthypnotherapy aboutme consultation';
-    grid-gap: 5px;
-    grid-template-columns: auto 15% 15% 15% 15%;
-    margin-bottom: 5px;
- }
-
 .item1 {
-    border: 0;
-    padding:15px 20px 10px 20px;  
+    padding: 20px;
+}
+.logo-img > img{
+    width: 80%;
 }
 
-.item1 img{
-    max-height: auto;
-    max-width: 60%;
+.item2  {
+ padding-top: 2vh;
 }
-  
-.item2 {
-    padding-top: 10px;
+/*  *******MATTS NAV STRUCTURE****** */
+
+
+   
+
+
+.nav-items {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+    justify-content: space-around;
+}
+
+.nav-item {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    overflow: visible;
+}
+
+.main-text {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
     font-weight: 600;
-    text-align: right;
+    border-bottom: 3px solid transparent;
 }
 
-.item3 {
-    padding: 10px 0 0 5px;
-    font-weight: 600;
-    text-align: left;
+.main-text.link:hover, .main-text.current {
+    border-bottom: 3px solid #86d5db;
 }
 
-
-.item3 > a {    
-    color: #990000;/*-- #993300 -- is slightly brighter*/
-}
-
-.item3 :hover {
-    color: #ffbb00;
-}
-
-
-.nav {
-    font-size: 16px;
+.link-title {
     text-align: center;
-    height: 50px;
-    margin: 5px 10px 5px 10px;
-    padding: 0;
-    color: #331100;
-    border-bottom: 2px solid orange;
+    padding: 0 10px 0 10px;
 }
 
-.nav.current {
-    border-bottom: 2px solid #5f8dd3;
+.sub-links {
+    top: 5vh;
+    position: absolute;
+    display: none;
+    cursor: default;
 }
 
-.nav:not(.current):hover{
-    border-bottom: 2px solid #5f8dd3ff;
+.nav-item:hover > .sub-links {
+    display: block;
 }
-/*end of HEADER grid container1 */
 
+.sub-link-title {
+    padding: 10px;
+}
+
+.sub-link {
+    text-decoration: none;
+}
+
+.sub-link:hover {
+    text-decoration: underline;
+}
+/* ********END MATTS NAV STRUCTURE***** */
+   
+
+
+  
 
 /*---- GENERAL CONTENT STYLES ----*/
         /*---HEADINGS ----*/
@@ -190,7 +204,7 @@ h1	{
     line-height: 0.9em;
     text-align: center;
     padding-top: 0.5em;
-    color: #5f8dd3;
+    color: #287DA1 /*#267596 #247191 #1d5b75*/;
 }
         
 h2  {
@@ -224,17 +238,15 @@ h5  { font-size: 20px;
     line-height: 0.3em;
     text-align: center;
     padding-top: 0;
-    color: #5f8dd3;
+    color: #287DA1 /*#267596 #5f8dd3*/;
 }
         
      /*----PARAGRAPHS ----*/
 p   {
     padding: 0 20px 16px 20px;
 }
-
-span {/*-- italic--*/
-    font-style: italic;
-}
+    
+            
         
 .card-text   {
     line-height: 1.2em;
@@ -259,7 +271,16 @@ span {/*-- italic--*/
     line-height: 1.2em;
     margin: 0 60px 0 60px;   
 }
-        
+
+.contact-logo {
+    padding: 0 15px 0 0;
+}
+
+.indent {
+    padding: 0 20px 20px 60px;
+    color:blue;
+} 
+
 .quote  {
     font-size: 10pt;
     text-align: center;
@@ -272,11 +293,58 @@ span {/*-- italic--*/
     color: #cc6600; /*---#663300;---*/
 }
 
-/*---not used? - was  to be for home page perhaps
-.footer-no-color {
-    background-color: transparent;
-}---*/
+.italic {font-style: italic;
+}
+
         
+/*---FROM W3 for Nav Bar/
+/* The navigation menu */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  */
+
      /*----LIST - bullets ----*/
 ul {
     list-style-type: circle;
@@ -330,110 +398,111 @@ ul {
 /* ---- FOR MOBILE - media queries ----*/
 @media only screen and (max-width: 600px) {
     
-.grid-container1 {/*-media queries-*/
-    grid-template-columns: 50% 50%;
-    grid-template-areas:
-        'logo logo'
-        'contact ph'
-        'home abouthypnotherapy'
-        'aboutme consultation';
-    padding: 10px 15px 5px 10px;
-}
-       
-.item2 {/*-media queries-*/
-      text-align: center;
-      }
-  
-.item3{/*-media queries-*/
-      text-align: left;
-      font-size: 14px;
-      }
-  
-     
-.grid-container2 {/*-media queries-*/
-    grid-template-columns: 100%;
-    grid-template-areas:
-        'where'
-        'wellington'
-        'when'
-        'day'
-        'step1'
-        'detail1'
-        'step2'
-        'detail2'
-        'step3'
-        'detail3'
-        'step4'
-        'detail4';
-     grid-gap: 0;
-     padding: 0 10px 0 10px;
-     text-align: left;
-}
+    .grid-container1 {/*-media queries-*/
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            'logo logo'
+            'contact ph'
+            'home abouthypnotherapy'
+            'aboutme consultation';
+        padding: 10px 15px 5px 10px;
+    }
+        
+    .item2 {/*-media queries-*/
+        text-align: center;
+        }
     
-.item12, .item14, .item16, .item18, .item20, .item22 { /*-media queries-*/
-    font-size: 20px;
-    padding-top:20px;
-}
-
-.item13, .item15, .item17, .item19, .item21, .item23 {/*-media queries-*/
-    padding: 0 0 10px 0; 
-}
-     
-/* --Text width for Media queries --*/
-
-#main-text-outer {
-    padding: 0 10px 0 10px;
-}
-
-#main-text {/*-media queries-*/
-    width: 100%;
-}
-
-#main-text > p {
-    padding: 0;
-}
+    .item3{/*-media queries-*/
+        text-align: left;
+        font-size: 14px;
+        }
     
-#wider-text /* --85% --*/ {/*-media queries-*/
-    width: 100%;
-}
+        
+    .grid-container2 {/*-media queries-*/
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'where'
+            'wellington'
+            'when'
+            'day'
+            'step1'
+            'detail1'
+            'step2'
+            'detail2'
+            'step3'
+            'detail3'
+            'step4'
+            'detail4';
+        grid-gap: 0;
+        padding: 0 10px 0 10px;
+        text-align: left;
+    }
+        
+    .item12, .item14, .item16, .item18, .item20, .item22 { /*-media queries-*/
+        font-size: 20px;
+        padding-top:20px;
+    }
 
-#card-set {/*-media queries-*/
-    width: 90vw;
-}
+    .item13, .item15, .item17, .item19, .item21, .item23 {/*-media queries-*/
+        padding: 0 0 10px 0; 
+    }
+        
+    /* --Text width for Media queries --*/
 
-/*---Styles for media queries ---*/
-h1	{/*-media queries-*/
-    font-size: 1.6em;
-    padding-top: 0;
-}
+    #main-text-outer {
+        padding: 0 10px 0 10px;
+    }
 
-h2  {/*-media queries-*/
-    font-size: 1.3em;
-    padding-top: 0;
-}
+    #main-text {/*-media queries-*/
+        width: 100%;
+    }
 
-h3  { /* h3=card heading -media queries-- */
-    Padding-top: 0;
-}
+    #main-text > p {
+        padding: 0;
+    }
+        
+    #wider-text /* --85% --*/ {/*-media queries-*/
+        width: 100%;
+    }
 
-p   {
-    padding: 0 10px 16px 10px;
-}
+    #card-set {/*-media queries-*/
+        width: 90vw;
+    }
 
-ul {
-    padding: 0 10px 0 20px;
-}
+    /*---Styles for media queries ---*/
+    h1	{/*-media queries-*/
+        font-size: 1.6em;
+        padding-top: 0;
+    }
 
-.card-img1 {
-    margin: 20px auto 0 auto;
-    float: none;
-    height:100px; 
-}
-    
-.card-img2 {
-    margin: 20px auto 0 auto;
-    float: none;
-    height:70px; 
+    h2  {/*-media queries-*/
+        font-size: 1.3em;
+        padding-top: 0;
+    }
+
+    h3  { /* h3=card heading -media queries-- */
+        Padding-top: 0;
+    }
+
+    p   {
+        padding: 0 10px 16px 10px;
+    }
+
+    ul {
+        padding: 0 10px 0 20px;
+    }
+
+    .card-img1 {
+        margin: 20px auto 0 auto;
+        float: none;
+        height:100px; 
+    }
+        
+    .card-img2 {
+        margin: 20px auto 0 auto;
+        float: none;
+        height:70px; 
+    }
 }
 
 /*

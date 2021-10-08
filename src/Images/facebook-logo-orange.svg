@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2.998003mm"
+   height="2.97999mm"
+   viewBox="0 0 2.998003 2.97999"
+   version="1.1"
+   id="svg1355"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="facebook-logo-orange.svg"
+   inkscape:export-filename="C:\Users\jenny\Documents\GitHub\Jenny-Christie-website\Resource material\facebook logo orange.png"
+   inkscape:export-xdpi="8472.3887"
+   inkscape:export-ydpi="8472.3887">
+  <defs
+     id="defs1349" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.2"
+     inkscape:cx="18.955926"
+     inkscape:cy="11.960319"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1624"
+     inkscape:window-height="1020"
+     inkscape:window-x="274"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata1352">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-98.125717,-153.7936)">
+    <path
+       d="m 101.12372,155.2926 c 0,-0.8278 -0.6712,-1.499 -1.499003,-1.499 -0.8278,0 -1.499,0.6712 -1.499,1.499 0,0.74816 0.54807,1.36831 1.26478,1.48087 v -1.04743 h -0.3807 v -0.43344 h 0.3807 v -0.33025 c 0,-0.37562 0.22385,-0.58327 0.56621,-0.58327 0.164023,0 0.335603,0.0293 0.335603,0.0293 v 0.36893 h -0.18911 c -0.186113,0 -0.244333,0.1155 -0.244333,0.23422 v 0.28106 h 0.415713 l -0.0664,0.43344 h -0.349253 v 1.04756 c 0.716713,-0.11249 1.264783,-0.73264 1.264783,-1.481 z"
+       fill-rule="evenodd"
+       id="path1877"
+       style="fill:#ffa500;fill-opacity:1;stroke-width:0.00669193"
+       inkscape:transform-center-x="-5.2117558"
+       inkscape:transform-center-y="5.8799296" />
+  </g>
+</svg>
