@@ -36,7 +36,7 @@
     }
 
     .main-text.link:hover > div, .main-text.current > div {
-        border-bottom: 3px solid #86d5db;
+        border-bottom: 2px solid #EDCE1C;
     }
 
     .nav-item {
@@ -47,7 +47,7 @@
     .main-text {
         cursor: default;
         display: inline-block;
-        border-bottom: 3px solid transparent;
+        border-bottom: 2px solid transparent;
     }
 
     .main-text.link {

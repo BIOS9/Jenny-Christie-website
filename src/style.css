@@ -12,6 +12,9 @@ a   {
         text-decoration: none;
         color: #807433;
     }
+a.blue {
+    color: #3B7BA8;
+}
 
 
 /*------------Main div positions----*/
@@ -157,7 +160,7 @@ a   {
     cursor: pointer;
     text-decoration: none;
     font-weight: 600;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 .main-text.link:hover, .main-text.current {
@@ -205,13 +208,13 @@ h1	{
     line-height: 0.9em;
     text-align: center;
     padding-top: 0.5em;
-    color: #00618F /*#267596 #247191 #1d5b75*/;
+    color: #074D8F/*#267596 #247191 #1d5b75*/;
 }
         
 h2  {
     font-size: 25px;
     font-weight: 100;
-    line-height: 0.9em;
+    line-height: 1.1em;
     margin: 1em;
     padding-top:0.5em;
     text-align: center;
@@ -221,17 +224,16 @@ h2  {
 h3  { /* h3=card heading */
     font-size: 25px;
     font-weight:100;
-    line-height: 1em;
+    line-height: 1.1em;
     text-align: center;
-    padding: 30px 15px 0 15px;
-    color: #2B4E70;
+    padding: 30px 15px 0 15px;;
 }
         
 h4  { /*h4=consultation grid heading*/
     font-size: 20px;
-    font-weight:100;
+    font-weight:400;
     margin-top: 0;
-    color: #2B4E70;
+    color: #074D8F;
 }
 
 h5  { font-size: 20px;
@@ -239,8 +241,15 @@ h5  { font-size: 20px;
     line-height: 0.3em;
     text-align: center;
     padding-top: 0;
-    color: #00618F /*#287DA1 #267596 #5f8dd3*/;
+    color: #074D8F /*#287DA1 #267596 #5f8dd3*/;
 }
+/*bolg heading*/
+h6 {font-size: 2em;
+    font-weight: 400;
+    line-height: 0.9em;
+    text-align: left;
+    padding-top: 1em 0 0 0;
+    color: #074D8F}
         
      /*----PARAGRAPHS ----*/
 p   {
@@ -281,69 +290,39 @@ p   {
     padding: 0 20px 20px 60px;
 } 
 
+ul.sub-list {
+    list-style-type: circle;
+    padding-left: 30px;
+}
+
 .quote  {
     font-size: 10pt;
     text-align: center;
 }
-       
+  
+.sub-heading {
+    font-size: 12px;
+}
 .credits   {/*---- in Footer ----*/
     font-size: 10px;
     text-align: center;
-    padding: 10px 0 20px 0;
-    color: #cc6600; /*---#663300;---*/
+    padding: 2px 0 20px 0;
+    color: #074D8F; /*---#663300;---*/
 }
 
+.contact-logos {
+    text-align: center;
+    padding: 2px 0 0 0;
+    
+}
+.footer-image {
+    padding: 10px 20px 2px 20px;
+}
 .italic {font-style: italic;
 }
 
         
-/*---FROM W3 for Nav Bar/
-/* The navigation menu */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Navigation links */
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: red;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  
-  
-  /* Style the subnav content - positioned absolute */
-  .subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: red;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  /* Style the subnav links */
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Add a grey background color on hover */
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  /* When you move the mouse over the subnav container, open the subnav content */
-  .subnav:hover .subnav-content {
-    display: block;
-  }
-  */
+
 
      /*----LIST - bullets ----*/
 ul {
