@@ -327,9 +327,10 @@ ul.sub-list {
 
      /*----LIST - bullets ----*/
 ul {
-    list-style-type: circle;
-    padding: 0 0 0 64px;
+    list-style-type: disc;
+    padding: 0 0 0 60px;
 }
+
         
 
 
