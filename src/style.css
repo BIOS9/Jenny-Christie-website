@@ -283,8 +283,14 @@ p   {
     margin: 0 60px 0 60px;   
 }
 
-.contact-logo {
+.contact-logos {
     padding: 0 15px 0 0;
+}
+
+.contact-logos-in-grid {
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin: 0;
 }
 
 .indent {
